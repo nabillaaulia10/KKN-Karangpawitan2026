@@ -313,6 +313,43 @@ footer {
         text-align: center;
     }
     }
+/* Styling Tombol Lihat Berita Selengkapnya */
+.read-more-wrapper {
+    margin-top: 20px;
+    text-align: right; /* Posisi tombol di sebelah kanan artikel */
+}
+
+.btn-read-more {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-read-more:hover {
+    background-color: #172554;
+    transform: translateY(-1px);
+}
+
+/* Responsif untuk HP (opsional: tombol menjadi selebar kotak di HP agar mudah diklik) */
+@media screen and (max-width: 600px) {
+    .read-more-wrapper {
+        text-align: center;
+    }
+    
+    .btn-read-more {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
 </style>
 <body>
 
