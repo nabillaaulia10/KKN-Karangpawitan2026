@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukan Sekadar Aksi: Kolaborasi KKN dan Karawang Peduli Menyuarakan Cinta Lingkungan - KKN Karangpawitan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Menghubungkan ke file CSS terpisah -->
+    <link rel="stylesheet" href="CSS/kca.css">
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="header-top">
+            <div class="logo-area">
+                <div class="logo-badge">Logo</div>
+                <div class="logo-text">
+                    <h1>KKN Karangpawitan</h1>
+                    <p>KKN Karangpawitan - Universitas Buana Perjuangan Karawang</p>
+                </div>
+            </div>
+            <div class="search-lang">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-search"></i>
+                </div>
+                <button class="btn-langganan">Langganan</button>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="#">PROFIL DESA</a></li>
+                <li><a href="#">PROGRAM KERJA</a></li>
+                <li><a href="#">DOKUMENTASI</a></li>
+                <li class="active"><a href="#">ARTIKEL WARGA</a></li>
+                <li><a href="#">KONTAK</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utama Halaman Detail Artikel -->
+    <div class="container detail-container">
+        <!-- Kolom Kiri: Artikel Lengkap -->
+        <article class="main-article article-detail">
+            <div class="article-category-tag">KKN KARANGPAWITAN 2026</div>
+            <h2>Bukan Sekadar Aksi: Kolaborasi KKN dan Karawang Peduli Menyuarakan Cinta Lingkungan</h2>
+            
+            <div class="article-meta">
+                <i class="fa fa-calendar-alt"></i> Juli 18, 2026 &nbsp;&bull;&nbsp; <i class="fa fa-user"></i> Tim Jurnalis KKN
+            </div>
+
+            <div class="article-img-container">
+                <img src="images/IMG_2095.jpg" alt="Aksi Kolaborasi KKN Karangpawitan dan Karawang Peduli">
+                <div class="img-caption-tag">Dokumentasi Aksi Peduli Lingkungan Karangpawitan</div>
+            </div>
+
+            <div class="article-content-body">
+                <p class="lead-paragraph">
+                    Pada 12 Juli 2026, semangat kebersamaan dan kepedulian terhadap bumi membara di tanah Karangpawitan. Mahasiswa Kuliah Kerja Nyata (KKN) Universitas Buana Perjuangan (UBP) Karawang menggandeng komunitas inspiratif <strong>Karawang Peduli</strong> untuk menggelar aksi nyata: orasi publik dan gerakan pungut sampah massal di sepanjang jalan protokol Karangpawitan. Aksi ini bukan sekadar kegiatan seremonial, melainkan panggilan jiwa untuk membangun kesadaran kolektif warga akan pentingnya merawat kelestarian lingkungan hidup bersama.
+                </p>
+
+                <h3>Suara Perubahan: Menggugah Kesadaran Lewat Orasi Edukatif</h3>
+                <p>
+                    Kegiatan pagi yang cerah itu diawali dengan penyampaian orasi interaktif dan edukatif oleh perwakilan mahasiswa KKN. Dengan pengeras suara, mereka dengan lantang menyoroti dampak buruk dari kebiasaan sepele membuang sampah sembarangan—mulai dari pencemaran ekosistem lokal hingga ancaman nyata bencana banjir yang mengintai pemukiman warga saat musim penghujan tiba.
+                </p>
+                <p>
+                    Pesan-pesan persuasif yang disampaikan berhasil menarik perhatian pengguna jalan serta memantik antusiasme luar biasa dari warga sekitar dan para relawan yang hadir di lokasi. Suasana hangat penuh keakraban nampak tatkala warga berbondong-bondong merapat untuk menyimak dan mendukung penuh jalannya kegiatan.
+                </p>
+
+                <h3>Aksi Nyata di Lapangan: Gotong Royong Membersihkan Sesama</h3>
+                <p>
+                    Usai sesi orasi yang membakar semangat, seluruh peserta tanpa ragu langsung terjun ke lapangan. Tepat pukul 07.00 hingga 09.00 WIB, aksi gotong royong masif membersihkan sampah di sepanjang Jalan Karangpawitan resmi dimulai. 
+                </p>
+                <p>
+                    Dalam kolaborasi harmonis ini, pihak Karawang Peduli tampil terdepan menggerakkan partisipasi aktif warga setempat, sementara tim mahasiswa KKN UBP Karawang memegang kendali penuh pada aspek koordinasi lapangan serta dokumentasi visual kegiatan. Berkat kerja sama yang solid dan tangan-tangan perkasa para relawan, area publik yang semula dipenuhi sampah plastik kini kembali bersih, asri, dan nyaman dipandang mata.
+                </p>
+
+                <div class="highlight-quote">
+                    <i class="fa fa-quote-left"></i>
+                    <p>"Melalui kolaborasi strategis ini, kami sangat berharap kepedulian terhadap lingkungan tidak lantas berhenti sekadar sebagai program kerja seremonial belaka. Lebih dari itu, semangat ini harus mampu bertransformasi menjadi kebiasaan hidup bersih yang melekat dalam keseharian warga masyarakat."</p>
+                </div>
+
+                <h3>Harapan Berkelanjutan untuk Karangpawitan</h3>
+                <p>
+                    Aksi damai dan pembersihan lingkungan ini ditutup dengan evaluasi singkat serta ramah tamah antara mahasiswa KKN, komunitas Karawang Peduli, dan warga desa. Bukti nyata bahwa perubahan besar selalu berawal dari langkah kecil di tingkat lokal kini telah ditorehkan di Karangpawitan. Harapannya, estafet kepedulian lingkungan ini akan terus dijaga dan dilestarikan oleh generasi masa depan desa.
+                </p>
+            </div>
+
+            <!-- Tombol Kembali -->
+            <div class="back-to-home">
+                <a href="index.html" class="btn-back"><i class="fa fa-arrow-left"></i> Kembali ke Beranda</a>
+            </div>
+        </article>
+
+        <!-- Kolom Kanan: Sidebar & Widget Blogger -->
+        <aside class="sidebar-blogger">
+            <div class="widget-box">
+                <h3>Admin</h3>
+                <div class="widget-content profile-widget">
+                    <div class="profile-avatar"><i class="fa fa-user-circle"></i></div>
+                    <a href="#" class="profile-link">Kunjungi profil</a>
+                </div>
+            </div>
+
+            <div class="widget-box">
+                <h3>Arsip</h3>
+                <ul class="widget-list">
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Juli 2026 (5)</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right"></i> Juni 2026 (3)</a></li>
+                </ul>
+            </div>
+
+            <div class="widget-box">
+                <h3>Informasi Lainnya</h3>
+                <div class="widget-content">
+                    <a href="#" class="report-link"><i class="fa fa-flag"></i> Laporkan Penyalahgunaan</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>&copy; 2026 KKN Karangpawitan - Universitas Buana Perjuangan Karawang | Diberdayakan oleh Blogger</div>
+            <div class="social-icons">
+                <span>Ikuti Kami</span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
