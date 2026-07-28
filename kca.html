@@ -8,6 +8,189 @@
     <!-- Menghubungkan ke file CSS terpisah -->
     <link rel="stylesheet" href="CSS/kca.css">
 </head>
+<style>
+/* DETAIL PAGE SPECIFIC STYLES */
+.detail-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.article-detail {
+    background: white;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.article-category-tag {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.article-detail h2 {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.article-content-body {
+    margin-top: 20px;
+}
+
+.article-content-body p {
+    font-size: 13.5px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+.article-content-body h3 {
+    font-size: 16px;
+    color: #0b1c3c;
+    margin: 25px 0 10px 0;
+    border-left: 4px solid #1e3a8a;
+    padding-left: 8px;
+}
+
+.lead-paragraph {
+    font-size: 14.5px !important;
+    font-weight: 500;
+    color: #222 !important;
+}
+
+.highlight-quote {
+    background: #f8fafc;
+    border-left: 4px solid #1e3a8a;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.highlight-quote p {
+    font-style: italic;
+    color: #444;
+    margin: 0 !important;
+}
+
+.highlight-quote i {
+    color: #1e3a8a;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.back-to-home {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f1f5f9;
+    color: #1e3a8a;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-back:hover {
+    background-color: #e2e8f0;
+}
+
+/* BLOGGER STYLE SIDEBAR */
+.sidebar-blogger {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.widget-box {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.widget-box h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0b1c3c;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.widget-content {
+    font-size: 12px;
+}
+
+.profile-widget {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-avatar {
+    font-size: 32px;
+    color: #666;
+}
+
+.profile-link, .report-link {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.profile-link:hover, .report-link:hover {
+    text-decoration: underline;
+}
+
+.widget-list {
+    list-style: none;
+}
+
+.widget-list li {
+    margin-bottom: 8px;
+}
+
+.widget-list li a {
+    color: #444;
+    text-decoration: none;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+}
+
+.widget-list li a:hover {
+    color: #1e3a8a;
+}
+
+/* Responsive Breakpoint untuk Tampilan HP */
+@media screen and (max-width: 992px) {
+    .detail-container {
+        grid-template-columns: 1fr;
+    }
+    }
+</style>
 <body>
 
     <!-- Header & Navigasi -->
