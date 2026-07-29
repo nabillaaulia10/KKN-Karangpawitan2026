@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="CSS/index.css"> 
 
-</head>
 <style>
 /* RESET & GLOBAL STYLES */
 * {
@@ -46,28 +45,28 @@ header {
     gap: 12px;
 }
 
-.logo-badge {
-    background: #fff;
-    width: 35px;
-    height: 35px;
+.logo-area .logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #0b1c3c;
-    font-weight: bold;
-    flex-shrink: 0;
+    background-color: #fff;
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo-text h1 {
     font-size: 16px;
     font-weight: bold;
+    color: #ffffff;
     letter-spacing: 0.5px;
+    margin-bottom: 2px;
 }
 
 .logo-text p {
     font-size: 10px;
-    color: #ccc;
+    color: #cbd5e1;
+    line-height: 1.2;
 }
 
 .search-lang {
@@ -113,7 +112,7 @@ header {
 nav {
     background-color: #172554;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    overflow-x: auto; /* Agar menu bisa digeser horizontal di HP jika terlalu panjang */
+    overflow-x: auto;
 }
 
 .nav-links {
@@ -139,7 +138,7 @@ nav {
     background-color: #1e3a8a;
 }
 
-/* MAIN CONTAINER (Karena sidebar kanan dihapus, kontainer utama dibuat 1 kolom) */
+/* MAIN CONTAINER */
 .container {
     max-width: 1200px;
     margin: 20px auto;
@@ -203,6 +202,30 @@ nav {
     font-size: 12px;
     color: #444;
     line-height: 1.6;
+}
+
+/* TOMBOL BACA SELENGKAPNYA */
+.read-more-wrapper {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.btn-read-more {
+    display: inline-block;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-read-more:hover {
+    background-color: #172554;
+    transform: translateY(-1px);
 }
 
 /* BOTTOM SECTION (BERITA & KOLOM WARGA) */
@@ -282,10 +305,10 @@ footer {
     font-size: 13px;
 }
 
-/* RESPONSIVE BREAKPOINTS (UNTUK HP & TABLET) */
+/* RESPONSIVE BREAKPOINTS */
 @media screen and (max-width: 992px) {
     .grid-news {
-        grid-template-columns: repeat(2, 1fr); /* Tablet: 2 kolom berita */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -305,40 +328,14 @@ footer {
     }
 
     .grid-news {
-        grid-template-columns: 1fr; /* HP: Berita jadi 1 kolom ke bawah agar rapi */
+        grid-template-columns: 1fr;
     }
 
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-    }
-/* Styling Tombol Lihat Berita Selengkapnya */
-.read-more-wrapper {
-    margin-top: 20px;
-    text-align: right; /* Posisi tombol di sebelah kanan artikel */
-}
 
-.btn-read-more {
-    display: inline-block;
-    background-color: #1e3a8a;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.btn-read-more:hover {
-    background-color: #172554;
-    transform: translateY(-1px);
-}
-
-/* Responsif untuk HP (opsional: tombol menjadi selebar kotak di HP agar mudah diklik) */
-@media screen and (max-width: 600px) {
     .read-more-wrapper {
         text-align: center;
     }
@@ -350,55 +347,18 @@ footer {
         text-align: center;
     }
 }
-
-/* Styling Area Logo & Gambar Logo */
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo-area .logo-img {
-    width: 45px;          /* Atur lebar logo (bisa disesuaikan, misal 40px - 50px) */
-    height: 45px;         /* Atur tinggi logo */
-    object-fit: contain;  /* Memastikan gambar tidak terdistorsi/gepeng */
-    border-radius: 50%;   /* Opsional: Membuat bentuk logo melingkar */
-    background-color: #fff; /* Warna latar belakang jika gambar transparan/PNG */
-    padding: 2px;         /* Padding opsional di dalam bingkai logo */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan tipis agar elegan */
-}
-
-/* Styling Teks Logo */
-.logo-text h1 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    margin-bottom: 2px;
-}
-
-.logo-text p {
-    font-size: 10px;
-    color: #cbd5e1; /* Warna abu-abu terang agar kontras dengan background header */
-    line-height: 1.2;
-}
-    
 </style>
+</head>
 <body>
 
     <!-- Header & Navigasi -->
     <header>
         <div class="header-top">
             <div class="logo-area">
-                <!-- Ganti path gambar dengan logo asli jika ada -->
-                <div class="logo-area"> 
-                <div class="header-top">
-               
-        <!-- Ganti 'images/logo-ubp.png' dengan lokasi/nama file foto logo Anda -->
-                    <img src="images/logo.png" alt="Logo KKN Karangpawitan" class="logo-img">
-                    <div class="logo-text">
+                <img src="images/logo.png" alt="Logo KKN Karangpawitan" class="logo-img">
+                <div class="logo-text">
                     <h1>KKN Karangpawitan</h1>
-                    <p>KKN Karangpawitan - Universitas Buana Perjuangan Karawang </p>
+                    <p>KKN Karangpawitan - Universitas Buana Perjuangan Karawang</p>
                 </div>
             </div>
             <div class="search-lang">
@@ -438,42 +398,10 @@ footer {
                 Aksi kolaboratif KKN Karangpawitan 2026 bersama Karawang Peduli mengajak masyarakat menjaga lingkungan melalui orasi edukatif dan kegiatan pungut sampah.
             </div>
             <div class="read-more-wrapper">
-                <a href="kca.html" class="btn-read-more">Lihat Berita Selengkapnya &rarr;</a>
+                <a href="detail-berita.html" class="btn-read-more">Lihat Berita Selengkapnya &rarr;</a>
             </div>
         </div>
-
-        <!-- Kolom Kanan: Kegiatan Utama Minggu Ini 
-        <div class="sidebar">
-            <h3>Kegiatan Utama Minggu Ini</h3>
-            
-            <div class="sidebar-item">
-                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=200&q=80" alt="Gigi">
-                <div class="sidebar-info">
-                    <h4>Penyuluhan Kesehatan Gigi untuk Siswa SDN 01</h4>
-                    <p>foto siswa sikat gigi bersama</p>
-                    <span class="time"><i class="fa fa-clock"></i> loto</span>
-                </div>
-            </div>
-
-            <div class="sidebar-item">
-                <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=200&q=80" alt="Plastik">
-                <div class="sidebar-info">
-                    <h4>Pelatihan Pembuatan Kerajinan Tangan dari Limbah Plastik</h4>
-                    <p>foto ibu-ibu PKK</p>
-                    <span class="time"><i class="fa fa-clock"></i> loto</span>
-                </div>
-            </div>
-
-            <div class="sidebar-item">
-                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=200&q=80" alt="Gotong Royong">
-                <div class="sidebar-info">
-                    <h4>Gotong Royong Perbaikan Fasilitas Balai Desa</h4>
-                    <p>foto mahasiswa dan warga</p>
-                    <span class="time"><i class="fa fa-clock"></i> foto mahasiswa dan warga</span>
-                </div>
-            </div>
-        </div>
-    </div>-->
+    </div>
 
     <!-- Bagian Bawah: Berita & Kolom Warga -->
     <div class="bottom-section">
@@ -515,7 +443,7 @@ footer {
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <div>&copy; 2024 KKN Desa Maju Jaya - Universitas Nusa Bangsa</div>
+            <div>&copy; 2026 KKN Karangpawitan - Universitas Buana Perjuangan Karawang</div>
             <div class="social-icons">
                 <span>Startup</span>
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -527,4 +455,4 @@ footer {
     </footer>
 
 </body>
-</html>
+    </html>
