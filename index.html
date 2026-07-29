@@ -351,15 +351,38 @@ footer {
     }
 }
 
-    /* Styling untuk Foto Logo di Header */
+/* Styling Area Logo & Gambar Logo */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo-area .logo-img {
-    width: 40px;           /* Lebar logo */
-    height: 40px;          /* Tinggi logo */
-    object-fit: contain;   /* Menjaga proporsi gambar agar tidak gepeng */
-    border-radius: 50%;    /* Opsional: Membuat bentuk logo melingkar */
-    background-color: #fff; /* Latar belakang cadangan jika gambar transparan */
-    padding: 2px;          /* Spasi tipis di dalam jika diperlukan */
-    }
+    width: 45px;          /* Atur lebar logo (bisa disesuaikan, misal 40px - 50px) */
+    height: 45px;         /* Atur tinggi logo */
+    object-fit: contain;  /* Memastikan gambar tidak terdistorsi/gepeng */
+    border-radius: 50%;   /* Opsional: Membuat bentuk logo melingkar */
+    background-color: #fff; /* Warna latar belakang jika gambar transparan/PNG */
+    padding: 2px;         /* Padding opsional di dalam bingkai logo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan tipis agar elegan */
+}
+
+/* Styling Teks Logo */
+.logo-text h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.logo-text p {
+    font-size: 10px;
+    color: #cbd5e1; /* Warna abu-abu terang agar kontras dengan background header */
+    line-height: 1.2;
+}
+    
 </style>
 <body>
 
@@ -375,7 +398,7 @@ footer {
                     <img src="images/logo.png" alt="Logo KKN Karangpawitan" class="logo-img">
                     <div class="logo-text">
                     <h1>KKN Karangpawitan</h1>
-                    <p>KKN Karangpawitan - Universitas Buana Perjuangan Karawang <p>
+                    <p>KKN Karangpawitan - Universitas Buana Perjuangan Karawang </p>
                 </div>
             </div>
             <div class="search-lang">
